@@ -43,7 +43,7 @@
   left: 195px;
   top: 20px;
 }
-.menu-list{
+.menu-list-header{
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -62,7 +62,7 @@
  letter-spacing: -0.02em;
  transition-duration: 250ms;
 }
-.menu-social{
+.menu-social-header{
   color: #1E1823;
   display: flex;
   gap: 16px;
@@ -129,7 +129,7 @@ body{
   .menu{
     width: 290px;
   }
-  .menu-list{
+  .menu-list-header{
     padding-left: 85px;
   }
   #close-menu{
