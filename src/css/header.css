@@ -122,3 +122,20 @@ body{
     max-width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+  .menu{
+    width: 290px;
+  }
+  .menu-list{
+    padding-left: 85px;
+  }
+  #close-menu{
+    left: 80%;
+
+  }
+
+  
+}
