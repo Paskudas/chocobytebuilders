@@ -1,21 +1,124 @@
-.header {
-  padding: 20px 0;
+/* The Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -200px; 
+  width: 220px;
+  height: 100%;
+  background: #1E1823;
+  padding: 20px;
+  transition: right 0.5s ease-out; 
+  visibility: hidden; 
+  
+
 }
 
-.nav-list {
+
+.menu.show-menu {
+  right: 0; 
+  visibility: visible; 
+}
+
+/* Button to open the menu */
+#open-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #eeeaea00;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Button to close the menu */
+#close-menu {
+  background-color: #ffffff00;
+  color: #333;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  left: 195px;
+  top: 20px;
+}
+.menu-list{
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  flex-direction: column;
+  gap: 24px;
+  color: #1E1823;
+  margin-top: 136px;
 }
+.menu-link:hover,
+.menu-link:focus{
+  color: orange;
 
-.nav-link {
+}
+.menu-link{
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+ font-size: 14px;
+ color: #FFFFFF;
+ letter-spacing: -0.02em;
+ transition-duration: 250ms;
+}
+.menu-social{
+  color: #1E1823;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  left: -5%;
+  top: 88%;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.logo{
+  display: block;
+  font-weight: 700;
+ font-size: 14px;
+ line-height: 1.3em;
+ letter-spacing: -0.03em;
+ margin-top: 25px;
+ padding-left: ;
+ color: #111111;
+ position: relative;
+}
+.logo-part{
+  font-style: italic;
+
+}
+.chocko{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+
+}
+.container{
+  max-width: 375px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+*{
+text-decoration: none;
+}
+a{
+  text-decoration: none;
+}
+.header-cont{
+  display: flex;
+}
+html {
+  box-sizing: border-box;
+}
+
+body{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+@media screen and (min-width: 480px){
+  .container{
+    max-width: 480px;
+  }
 }
