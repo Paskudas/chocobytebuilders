@@ -1,0 +1,16 @@
+:root {
+  /* font */
+    --main-font: 'Montserrat';
+
+
+/* color */
+--black: #111111;
+--dark-purple: #1E1823;
+--orange: #FD9222;
+--creamy: #FCF1E0;
+
+  }
+
+.container {
+  background-color: var(--orange);
+}
