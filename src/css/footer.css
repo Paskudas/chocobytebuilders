@@ -1,0 +1,52 @@
+.container {
+  max-width: 375px;
+  padding: 32px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+address {
+  font-style: normal;
+}
+footer {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  background-color: #1e1823;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+}
+.footer-title-accent {
+  color: #fd9222;
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+}
+.footer-contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+.footer-contact-item {
+}
+.footer-links {
+}
+.footer-links-item {
+}
+.footer-link-icon {
+  stroke: #ffffff;
+}
+
+.footer-link-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+.footer-link-item {
+}
