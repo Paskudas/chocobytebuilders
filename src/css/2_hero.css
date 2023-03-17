@@ -1,0 +1,171 @@
+.hero {
+    background: background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 395px 20px;
+    border-radius: 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-mob-2x.jpg);
+}
+}
+
+.hero-container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 335px;
+}
+
+.hero-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.hero-basic {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-btn {
+    gap: 14px;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+
+}
+
+.hero-item {
+}
+
+.button-default {
+}
+
+.button-click {
+}
+
+.hero-srcoll-down {
+    display: flex;
+    gap: 12px;
+}
+
+.hero-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.hero-btn-scroll {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: matrix(0, 1, 1, 0, 0, 0);
+}
+
+.btn-scroll-icon {
+}
+
+
+@media screen and (min-width: 768px) {
+.hero {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 671px;
+    padding-bottom: 117px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 30px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-tablet_2x.jpg);
+    }
+    }  
+
+.hero-container {
+    max-width: 704px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+
+.hero-title {
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    }
+
+.hero-btn {
+    gap: 14px;
+    padding-left: 0;
+    }
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    }
+
+.hero-scroll-down {
+    display:flex;
+    justify-content: flex-end;
+    gap: 14px;
+}
+}
+
+
+
+@media screen and (min-width: 1200px) {
+.hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-deskt.jpg);
+    padding-top: 188px;
+    padding-bottom: 188px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) 
+.hero {
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../images/chocolate-cover-cocoa-powder-deskt_2x.jpg);
+    }
+
+.container-hero {
+    max-width: 1136px;
+    }
+} 
+
+
