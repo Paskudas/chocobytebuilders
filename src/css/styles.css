@@ -8,7 +8,7 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
-:root {
+/* :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -22,26 +22,205 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
+} */
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
+.bn-container {
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0 auto;
   outline: 2px solid red;
 }
 
+.backdrop-buy-now {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.modal-buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.modal-close {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-bottom: 0px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-buy-now-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 32px;
+}
+
+.modal-span {
+  color: #fd9222;
+}
+
+.slider {
+  width: 231px;
+  height: 284px;
+  background-color: #404bbf;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.modal-buy-now-form-label:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.modal-buy-now-input-text {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.modal-buy-now-input {
+  height: 45px;
+  width: 100%;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 18px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fafafa;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-buy-now-input:first-child {
+  margin-bottom: 14px;
+}
+
+.modal-buy-now-input-wrap {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-buy-now-icon-phone {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+.modal-buy-now-icon-card {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+.modal-buy-now-textarea {
+  width: 100%;
+  height: 91px;
+  padding: 18px 14px;
+  resize: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 18px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fafafa;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-buy-now-btn {
+  min-width: 109px;
+  height: 41px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  background: #fd9222;
+  border-radius: 100px;
+  border-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-buy-now-btn-wrap {
+  text-align: left;
+}
+
 @media screen and (min-width: 375px) {
-  .container {
-    width: 293px;
+  .bn-container {
+    width: 311px;
   }
-  .backdrop-buy-now {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 300ms linear, visibility 300ms linear;
+
+  .modal-buy-now {
+    width: 263px;
+    height: 1007px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-now {
+    width: 705px;
+    height: 1058px;
+    background: #fafafa;
+    border-radius: 15px;
+    padding: 48px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
