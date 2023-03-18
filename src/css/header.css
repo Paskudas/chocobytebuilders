@@ -22,7 +22,7 @@
 /* Button to open the menu */
 #open-menu {
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 20px;
   background-color: #eeeaea00;
   color: #333;
@@ -50,23 +50,18 @@
   color: #1E1823;
   margin-top: 136px;
 }
-.menu-link-header:hover,
-.menu-link-header:focus{
+.menu-link:hover,
+.menu-link:focus{
   color: orange;
+
 }
-.menu-link-header{
+.menu-link{
   font-weight: 500;
  font-size: 14px;
  color: #FFFFFF;
  letter-spacing: -0.02em;
  transition-duration: 250ms;
 }
-.menu-link-header::after{
-  background-image: url(/images/Vector\ 15.png);
-  
-
-}
-
 .menu-social-header{
   color: #1E1823;
   display: flex;
@@ -104,13 +99,6 @@
   padding-left: 15px;
   padding-bottom: 15px;
 }
-.header-link{
-  display: none;
-}
-
-.header-top{
-  display: none;
-}
 
 *{
 text-decoration: none;
@@ -128,9 +116,6 @@ html {
 body{
   color: white;
   font-family: 'Montserrat', sans-serif;
-}
-ul{
-  padding: 0%;
 }
 @media screen and (min-width: 480px){
   .container-header{
@@ -153,43 +138,4 @@ ul{
   }
 
   
-}
-@media screen and (min-width: 1200px){
-  .container-header{
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-  }
-  .header-link{
-    display: flex;
-    gap: 24px;
-    margin-left: 284px;
-    
-
-  }
-  .header-top{
-    display: flex;
-    margin-left: 137px;
-    gap: 15px;
-    padding-top: 5px;
-    
-  }
-  .logo{
-    margin-top: 0%;
-    font-weight: 700;
-    font-size: 18px;
-  }
-  #open-menu{
-    display: none;
-  }
-  .header-anchor{
-    font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1em;
-  color: #111111;
-  letter-spacing: -0.02em;
-
-  }
-
-
 }
