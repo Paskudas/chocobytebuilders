@@ -1,7 +1,6 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-chocolate" viewBox="0 0 32 32">
-<path fill="#fcf1e0" style="fill: var(--color1, #fcf1e0)" d="M3.944 20.076l10.777-17.424 0.64-0.674 8.236 5.491 0.056 3.314 2.010 3.28-8.88 14.077-12.839-8.063z"></path>
 <path fill="none" stroke="#fd9222" style="stroke: var(--color2, #fd9222)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M21.635 23.88l-14.185-8.864M11.361 8.599l14.185 8.864M10.63 25.864l11.736-19.25M27.176 14.789c-3.040-1.899-4.234-3.384-2.278-6.592l-9.626-6.015-11.736 19.25 14.186 8.864 9.454-15.507z"></path>
 </symbol>
 <symbol id="icon-spoon" viewBox="0 0 32 32">
