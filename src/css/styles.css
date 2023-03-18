@@ -5,20 +5,21 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./1_header.css');
-@import url('./2_hero.css');
-@import url('./3_benefits.css');
-@import url('./4_components.css');
-@import url('./5_made.css');
-@import url('./6_products.css');
-@import url('./7_topsellers.css');
-@import url('./8_reviews.css');
-@import url('./9_subscribe.css');
-@import url('./10_footer.css');
-@import url('./11_modal-order.css');
-@import url('./12_modal-thanks.css');
-@import url('./13_modal-review.css');
-@import url('./14_modal-feedback.css');
-@import url('./15_modal-subscribe.css');
-@import url('./16_modal-mobile-menu.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
