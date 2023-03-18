@@ -1,5 +1,5 @@
 .hero {
-    background: background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-mob.jpg);
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
 .hero {
-    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-mob-2x.jpg);
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-mob_2x.jpg);
 }
 }
 
@@ -89,8 +89,6 @@
 
 .btn-scroll-icon {
 }
-
-
 @media screen and (min-width: 768px) {
 .hero {
     background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-tablet.jpg);
@@ -113,7 +111,7 @@
     .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-tablet_2x.jpg);
     }
-    }  
+    } 
 
 .hero-container {
     max-width: 704px;
@@ -122,7 +120,6 @@
     margin-top: 0;
     margin-bottom: 0;
     }
-
 .hero-title {
     font-size: 28px;
     line-height: calc(34 / 28);
@@ -132,7 +129,6 @@
     gap: 14px;
     padding-left: 0;
     }
-
 .list {
     list-style: none;
     display: flex;
@@ -146,9 +142,6 @@
     gap: 14px;
 }
 }
-
-
-
 @media screen and (min-width: 1200px) {
 .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-deskt.jpg);
@@ -158,8 +151,8 @@
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
-    (min-resolution: 2dppx) 
-.hero {
+    (min-resolution: 2dppx) {
+      .hero {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url(../img/chocolate-cover-cocoa-powder-deskt_2x.jpg);
     }
 
@@ -167,5 +160,3 @@
     max-width: 1136px;
     }
 } 
-
-
