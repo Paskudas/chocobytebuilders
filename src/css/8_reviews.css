@@ -70,30 +70,6 @@
   /* margin-bottom: 20px; */
 }
 
-.reviews-item-wraps {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-top: 42px;
-  padding-bottom: 42px;
-  width: 335px;
-  height: 200px;
-  background-color: rgb(181, 22, 22);
-  border-radius: 15px;
-  /* margin-bottom: 20px; */
-  margin: 0 auto;
-}
-
-.reviews-item-persons {
-  max-width: 335px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 2;
-  left: 128px;
-  top: -40px;
-}
-
 .reviews-item-text {
   width: 100%;
   padding-left: 18px;
