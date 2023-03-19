@@ -12,6 +12,7 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    background-color: #fafafa;
 }
 .video-made{
     width: 100%;
@@ -67,6 +68,7 @@
     color: #111111;
 }
 .svg-made{
+    margin-top: 3px;
     width: 100%;
     max-width: 8px;
     height: 8px;
@@ -110,6 +112,10 @@
     .screen-1200{
         display: flex;
         flex-direction: row;
+    }
+    .div-list{
+        margin: 0;
+        margin-left: 20px;
     }
     .video-made{
         width: 100%;
