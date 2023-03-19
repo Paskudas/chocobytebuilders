@@ -130,9 +130,13 @@
 }
 
 .components-item-first:hover .components-overlay,
+.components-item-first:focus .components-overlay,
 .components-item-second:hover .components-overlay,
+.components-item-second:focus .components-overlay,
 .components-item-third:hover .components-overlay,
-.components-item-fourth:hover .components-overlay {
+.components-item-third:focus .components-overlay,
+.components-item-fourth:hover .components-overlay,
+.components-item-fourth:focus .components-overlay {
        transform: translate(0, 0);
    }
 
