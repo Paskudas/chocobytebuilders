@@ -46,6 +46,7 @@
   color: #ffffff;
   text-align: left;
   max-width: 329px;
+  width: 100%;
 }
 
 .hero-basic {
@@ -98,7 +99,7 @@
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 100px;
-  shadow: none;
+  box-shadow: none;
 }
 
 .hero-srcoll-down {
@@ -219,7 +220,7 @@
     flex-grow: 1;
     max-width: 1440px;
     margin: 20px;
-    padding-bottom: 28px;
+    padding-bottom: 40px;
     border-radius: 30px;
   }
 
