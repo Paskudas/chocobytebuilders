@@ -1,37 +1,6 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-/* :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} */
-
-.bn-container {
-  padding-left: 24px;
-  padding-right: 24px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
-
-.backdrop-buy-now {
+.backdrop {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -39,36 +8,42 @@
   z-index: 100;
 }
 
-.modal-buy-now {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
-  height: 100%;
-  background: #fafafa;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  min-height: 1007px;
+  background-color: #fafafa;
   border-radius: 15px;
-  padding: 24px;
+  padding: 32px 24px;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  border-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-bottom: 0px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  right: 24px;
+  top: 24px;
 }
 
-.modal-buy-now-title {
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -81,24 +56,72 @@
   margin-bottom: 32px;
 }
 
-.modal-span {
+.modal-title-span {
   color: #fd9222;
 }
 
-.slider {
-  width: 231px;
-  height: 284px;
-  background-color: #404bbf;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
+.basket {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
 }
 
-.modal-buy-now-form-label:not(:last-child) {
+.basket-item {
+  width: 231px;
+  height: 284px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket-item:not(:first-child) {
+  display: none;
+}
+
+.modal-weight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 33px;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+.modal-slider {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-slider-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-weight-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #111111;
+}
+
+.modal-form-label {
+  display: block;
+}
+
+.modal-form-label:not(:last-child) {
   margin-bottom: 18px;
 }
 
-.modal-buy-now-input-text {
+.input-text {
   display: block;
   font-family: 'Montserrat';
   font-style: normal;
@@ -110,39 +133,41 @@
   margin-bottom: 8px;
 }
 
-.modal-buy-now-input {
+.modal-input {
   height: 45px;
   width: 100%;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
+  border-radius: 13px;
   outline: none;
-  padding-left: 18px;
-  padding-right: 18px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 14px 18px;
   background-color: #fafafa;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
-  display: flex;
-  align-items: center;
+  font-size: 17px;
+  line-height: 1.22;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
-.modal-buy-now-input:first-child {
-  margin-bottom: 14px;
+.modal-input:focus,
+.modal-input:hover {
+  color: #000000;
 }
 
-.modal-buy-now-input-wrap {
+.input-wrap-tel > .modal-input {
+  padding: 10px 29px 11px 106px;
+}
+
+.input-wrap {
   position: relative;
   margin-bottom: 8px;
 }
 
-.modal-buy-now-icon-phone {
+.modal-icon {
+  width: 24px;
+  height: 24px;
   display: block;
   position: absolute;
   top: 50%;
@@ -150,75 +175,160 @@
   transform: translateY(-50%);
 }
 
-.modal-buy-now-icon-card {
+.modal-icon-tel {
+  width: 34px;
+  height: 17px;
   display: block;
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 50px;
   transform: translateY(-50%);
 }
 
-.modal-buy-now-textarea {
+.modal-icon-card {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+}
+
+.modal-textarea {
   width: 100%;
   height: 91px;
-  padding: 18px 14px;
+  padding: 22px 24px;
   resize: none;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 8px;
-  outline: none;
-  margin-bottom: 18px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: #fafafa;
-
+  border-radius: 13px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.21;
-  display: flex;
-  align-items: center;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+  outline: none;
+  background-color: #fafafa;
+  margin-bottom: 18px;
 }
 
-.modal-buy-now-btn {
-  min-width: 109px;
-  height: 41px;
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #757575;
+}
+
+.modal-btn {
+  min-width: 133px;
+  height: 45px;
+  background: #fd9222;
+  border-radius: 100px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   color: #ffffff;
-  background: #fd9222;
-  border-radius: 100px;
   border-color: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
 }
 
-.modal-buy-now-btn-wrap {
+.modal-btn-wrap {
   text-align: left;
 }
 
 @media screen and (min-width: 375px) {
-  .bn-container {
-    width: 311px;
-  }
-
-  .modal-buy-now {
-    width: 263px;
-    height: 1007px;
-  }
 }
 
 @media screen and (min-width: 768px) {
-  .modal-buy-now {
-    width: 705px;
-    height: 1058px;
-    background: #fafafa;
-    border-radius: 15px;
+  .modal {
+    width: 609px;
+    min-height: 1058px;
     padding: 48px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .basket {
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .basket-item:first-child {
+    display: none;
+  }
+
+  .basket-item:not(:first-child) {
+    display: inline;
+    width: 160px;
+    height: 196px;
+    background: #ffffff;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .basket-item {
+    width: 160px;
+    height: 196px;
+    gap: 14px;
+  }
+
+  .modal-slider {
+    display: none;
+  }
+
+  .modal-slider-icon {
+    display: none;
+  }
+
+  .input-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-input {
+    height: 66px;
+    font-size: 18px;
+    padding: 22px 24px;
+  }
+
+  .input-wrap-tel > .modal-input {
+    padding: 21px 99px 21px 177px;
+  }
+
+  .input-wrap-name {
+    display: flex;
+    gap: 21px;
+  }
+
+  .modal-icon {
+    width: 32px;
+    height: 32px;
+    left: 24px;
+  }
+
+  .modal-icon-tel {
+    width: 43px;
+    height: 22px;
+    left: 74px;
+  }
+
+  .modal-textarea {
+    height: 137px;
   }
 }
 

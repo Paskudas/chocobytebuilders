@@ -10,54 +10,90 @@
 </head>
 
 <body>
-  <div class="backdrop-buy-now bn-container" data-modal>
-    <div class="modal-buy-now ">
-      <button type="button" class="modal-buy-now-close" data-modal-close>
-        <svg class="modal-buy-now-close-icon" width="24" height="24">
-          <use href="#"></use>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close>
+        <svg class="modal-close-icon" width="28" height="28">
+          <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
         </svg>
       </button>
-      <p class="modal-buy-now-title"><span class="modal-span">BUY </span> NOW</p>
-      <div class="slider"></div>
-      <form class="modal-buy-now-form">
-        <label class="modal-buy-now-form-label"><span class="modal-buy-now-input-text">Personal information</span>
-          <div class="modal-buy-now-input-wrap">
-            <input type="text" class="modal-buy-now-input" name="name" placeholder="Name">
-            <input type="text" class="modal-buy-now-input" name="name" placeholder="Surname">
+      <p class="modal-title"><span class="modal-title-span">BUY</span> NOW</p>
+      <div>
+        <ul class="basket list">
+          <li class="basket-item">
+            <img src="./images/choc1.svg" alt="" width="167" height="148">
+            <div class="modal-weight">
+              <p class="modal-weight-text">100 g</p>
+            </div>
+          </li>
+          <li class="basket-item">
+            <img src="./images/choc1.svg" alt="" width="120" height="107">
+            <div class="modal-weight">
+              <p class="modal-weight-text">100 g</p>
+            </div>
+          </li>
+          <li class="basket-item">
+            <img src="./images/choc2.svg" alt="" width="120" height="107">
+            <div class="modal-weight">
+              <p class="modal-weight-text">200 g</p>
+            </div>
+          </li>
+          <li class="basket-item">
+            <img src="./images/choc3.svg" alt="" width="120" height="107">
+            <div class="modal-weight">
+              <p class="modal-weight-text">300 g</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-slider">
+        <svg class="modal-slider-icon" width="80" height="13">
+          <use href="./images/symbol-defs.svg#slider"></use>
+        </svg>
+      </div>
+      <form class="modal-form">
+        <label class="modal-form-label"><span class="input-text">Personal information</span>
+          <div class="input-wrap">
+            <div class="input-wrap-name">
+              <input type="text" class="modal-input" name="name" placeholder="Name">
+              <input type="text" class="modal-input" name="name" placeholder="Surname">
+            </div>
           </div>
         </label>
-
-        <label class="modal-buy-now-form-label"><span class="modal-buy-now-input-text">Email</span>
-          <div class="modal-buy-now-input-wrap"><input type="email" class="modal-buy-now-input" name="email"
-              placeholder="Enter your email">
+        <label class="modal-form-label"><span class="input-text">Email</span>
+          <div class="input-wrap">
+            <input type="email" class="modal-input" name="email" placeholder="Enter your email">
           </div>
         </label>
-
-        <label class="modal-buy-now-form-label"><span class="modal-buy-now-input-text">Phone number</span>
-          <div class="modal-buy-now-input-wrap"><input type="tel" class="modal-buy-now-input" name="phone"
-              placeholder="Phone number">
-            <svg class="modal-buy-now-icon-phone" width="24" height="24">
-              <use href="#"></use>
-            </svg>
+        <label class="modal-form-label"><span class="input-text">Phone number</span>
+          <div class="input-wrap">
+            <div class="input-wrap-tel">
+              <input type="tel" class="modal-input" name="phone" placeholder="Phone number">
+              <svg class="modal-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#ukr"></use>
+              </svg>
+              <svg class="modal-icon-tel" width="43" height="22">
+                <use href="./images/symbol-defs.svg#text-tel"></use>
+              </svg>
+            </div>
           </div>
         </label>
-
-        <label class="modal-buy-now-form-label"><span class="modal-buy-now-input-text">Card number</span>
-          <div class="modal-buy-now-input-wrap"><input type="tel" class="modal-buy-now-input" name="card"
-              placeholder="Enter card">
-            <svg class="modal-buy-now-icon-card" width="32" height="21">
-              <use href="#"></use>
-            </svg>
+        <label class="modal-form-label"><span class="input-text">Card number</span>
+          <div class="input-wrap">
+            <div class="input-wrap">
+              <input type="tel" class="modal-input" name="phone" placeholder="Enter card">
+              <svg class="modal-icon-card" width="44" height="30">
+                <use href="./images/symbol-defs.svg#mc"></use>
+              </svg>
+            </div>
           </div>
         </label>
-
-        <label class="modal-buy-now-form-label"><span class="modal-buy-now-input-text">Comment</span>
-          <textarea name="textarea" class="modal-buy-now-textarea" placeholder="Enter text"></textarea>
+        <label class="modal-form-label"><span class="input-text">Comment</span>
+          <textarea name="textarea" class="modal-textarea" placeholder="Enter text"></textarea>
         </label>
-
       </form>
-      <div class="modal-buy-now-btn-wrap">
-        <button type="submit" class="modal-buy-now-btn">Submit</button>
+      <div class="modal-btn-wrap">
+        <button type="submit" class="modal-btn">Submit</button>
       </div>
     </div>
   </div>
