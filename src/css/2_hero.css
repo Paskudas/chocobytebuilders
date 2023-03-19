@@ -45,7 +45,7 @@
   letter-spacing: -0.03em;
   color: #ffffff;
   text-align: left;
-  max-width: 299px;
+  max-width: 329px;
 }
 
 .hero-basic {
@@ -170,7 +170,7 @@
   .hero-title {
     font-size: 28px;
     line-height: calc(34 / 28);
-    max-width: 484px;
+    max-width: 514px;
   }
 
   .hero-btn {
