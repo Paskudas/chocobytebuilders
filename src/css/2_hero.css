@@ -37,6 +37,9 @@
   justify-content: center;
 }
 
+.hero-crawlers {
+  display: none;
+}
 .hero-title {
   font-family: 'Montserrat';
   font-style: normal;
