@@ -1,0 +1,139 @@
+@import url(./reset.css);
+@import url(./base.css);
+
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.header>.container {
+  display: flex;
+  align-items: center;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  display: block;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+}
+
+.logo-icon {
+  margin-left: 4px;
+}
+
+.logo>span {
+  font-style: italic;
+}
+
+.menu-open-btn {
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-burger {
+  display: block;
+  stroke: black;
+}
+
+.navigation,
+.soc-media {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+    .header>.container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .header>.container {
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 188px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .nav-list-item {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+  }
+
+  .soc-media {
+    display: block;
+    margin-left: auto;
+  }
+
+  .soc-media-list {
+    display: flex;
+    gap: 18px;
+  }
+
+  .media-icon {
+    display: block;
+    fill: white;
+    stroke: black;
+    
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #1e1823;
+  z-index: 999;
+  padding-top: 28px;
+  padding-bottom: 22px;
+  padding-left: 21px;
+  transform: translateX(100%);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.modal-close {
+  margin-left: auto;
+stroke:white;
+background-color: transparent;
+}

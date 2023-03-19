@@ -1,0 +1,39 @@
+<div class="container-modal-subscribe" id="modal-subscribe">
+  <div class="modal-subscribe">
+    <button class="modal-subscribe-btn-close close" type="button">
+      <svg class="modal-subscribe-icon">
+        <use href="/img/svg_sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <picture class="modal-subscribe-img">
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/pieces-of-chocolate-bars_538x196.jpg    1x,
+          /img/pieces-of-chocolate-bars_538x196_2x.jpg 2x
+        "
+      />
+      <source
+        srcset="
+          /img/pieces-of-chocolate-bars_311x169.jpg    1x,
+          /img/pieces-of-chocolate-bars_311x169_2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img src="/img/pieces-of-chocolate-bars_311x169.jpg" alt="CHOCOLATE" />
+    </picture>
+    <h3 class="modal-subscribe-tittle">
+      EXPLORE OUR <br />
+      <span class="modal-subscribe-tittle-colorize">NEW CHOCOLATE</span> FIRST!
+    </h3>
+    <label class="modal-subscribe-input-wrap"
+      ><input
+        type="email"
+        name="user-name"
+        id="user-name"
+        class="modal-subscribe-input"
+      />
+      <button type="submit" class="modal-subscribe-btn-submit">Submit</button>
+    </label>
+  </div>
+</div>
