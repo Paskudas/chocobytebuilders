@@ -11,9 +11,11 @@
   background-size: cover;
   flex-grow: 1;
   max-width: 1440px;
-  margin: 20px;
+  margin: 20px auto;
   padding-bottom: 28px;
   padding-top: 395px;
+  padding-right: 16px;
+  padding-left: 20px;
   border-radius: 30px;
 }
 
@@ -32,7 +34,7 @@
 
 .hero-container {
   width: 100%;
-  padding: 0 20px;
+
   margin: 0 auto;
   justify-content: center;
 }
@@ -40,6 +42,7 @@
 .hero-crawlers {
   display: none;
 }
+
 .hero-title {
   font-family: 'Montserrat';
   font-style: normal;
