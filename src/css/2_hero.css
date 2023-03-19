@@ -134,6 +134,7 @@
   display: flex;
   padding: 0px;
   box-sizing: border-box;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -203,8 +204,9 @@
   }
 
   .hero-btn-scroll {
-  width: 38px;
-  height: 38px;
+    width: 38px;
+    height: 38px;
+  }
 
   .hero-scroll-down {
     display: flex;
@@ -228,7 +230,7 @@
     background-size: cover;
     flex-grow: 1;
     max-width: 1440px;
-    margin: 20px;
+    margin: 20px auto;
     padding-bottom: 40px;
     border-radius: 30px;
   }
