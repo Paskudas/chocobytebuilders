@@ -19,24 +19,73 @@
     />
     <title>Choco Byte Builders</title>
     
-    <script type="module" crossorigin src="/chocobytebuilders/assets/index-5e9a3888.js"></script>
-    <link rel="stylesheet" href="/chocobytebuilders/assets/index-bcfa4689.css">
+    <script type="module" crossorigin src="/chocobytebuilders/assets/index-9512e19b.js"></script>
+    <link rel="stylesheet" href="/chocobytebuilders/assets/index-20e71253.css">
   </head>
   <body>
     <header>
-      <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+      <div class="container-header">
+  <a href="" class="logo"
+    ><span class="logo-part">SIMPLY</span> CHOCOLATE
+    <svg width="21" height="21" class="chocko">
+      <use href="./src/img/svg_sprite.svg#icon-chocolate-2"></use>
+    </svg>
+  </a>
+  <ul class="header-link">
+    <li><a href="" class="header-anchor">Home</a></li>
+    <li><a href="" class="header-anchor">How it’s made?</a></li>
+    <li><a href="" class="header-anchor">Our products</a></li>
+    <li><a href="" class="header-anchor">Top sellers</a></li>
+    <li><a href="" class="header-anchor">Chocolate is loved</a></li>
+  </ul>
+  <ul class="header-top">
+    <a href="">
+      <svg class="svg-header" width="24" height="24">
+        <use href="./src/img/svg_sprite.svg#icon-instagram-1"></use>
+      </svg>
+    </a>
+    <a href="">
+      <svg width="24" height="24">
+        <use href="./src/img/svg_sprite.svg#icon-twitter-1"></use>
+      </svg>
+    </a>
+  </ul>
+  <button id="open-menu">
+    <img src="./src/img/menu-03.png" alt="" width="28" height="28" />
+  </button>
+
+  <div id="menu" class="menu">
+    <button id="close-menu">
+      <svg width="28" height="28" class="header-menu-close">
+        <use href="./src/img/svg_sprite.svg#icon-Property-1Default"></use>
+      </svg>
+    </button>
+    <ul class="menu-list-header">
+      <li><a href="" class="menu-link-header">Home</a></li>
+      <li><a href="" class="menu-link-header">How it’s made?</a></li>
+      <li><a href="" class="menu-link-header">Top sellers</a></li>
+      <li><a href="" class="menu-link-header">Top sellers</a></li>
+      <li><a href="" class="menu-link-header">Chocolate is loved</a></li>
+    </ul>
+    <ul class="menu-social-header">
+      <li class="menu-header-svg">
+        <a href="">
+          <svg width="24px" height="24px" class="menu--svg">
+            <use href="./src/img/svg_sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <li class="menu-header-svg">
+        <a href="">
+          <svg width="24px" height="24px" class="menu--svg">
+            <use href="./src/img/svg_sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
-</header>
+  </div>
+</div>
 
     </header>
     <main>
@@ -51,7 +100,7 @@
             <ul class="hero-btn hero-list">
                 <div class="main-hero-btn">
                     <li class="hero-item">
-                        <button class="button-default button-click" type="button">Buy now</button>
+                        <button class="button-default button-click" type="button" id="open-modal-order">Buy now</button>
                     </li>
                     <li class="hero-item">
                         <button class="button-default button-click" type="button">How it's made?</button>
@@ -385,10 +434,145 @@
 </section>
       
       
-      <div class="test-container">
+      <section class="reviews">
+  <div class="reviews-container">
+    <h2 class="reviews-title">
+      <span class="reviews-title-accent">CHOCOLATE </span>IS LOVED
+    </h2>
+    <ul class="reviews-list list">
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_viktoria_dobrzhanska.png"
+            alt="Victoria Dobrzhanska"
+            srcset="../img/ellipse_viktoria_dobrzhanska_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Victoria Dobrzhanska</h3>
+          <p class="reviews-item-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_nazar_babenko.png"
+            alt="Nazar Babenko"
+            srcset="../img/ellipse_nazar_babenko_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Nazar Babenko</h3>
+          <p class="reviews-item-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_olena_kampush.png"
+            alt="Olena Kampusch"
+            srcset="../img/ellipse_olena_kampush_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Olena Kampusch</h3>
+          <p class="reviews-item-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_natalia_sus.png"
+            alt="Natalia Sus"
+            srcset="../img/ellipse_natalia_sus_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Natalia Sus</h3>
+          <p class="reviews-item-text">
+            The chocolate assortment was delicious. Both dark and milk chocolate
+            pieces were smooth and just right on the sweetness level.
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_danilo_nottingham.png"
+            alt="Danilo Nottingham"
+            srcset="../img/ellipse_danilo_nottingham_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Danilo Nottingham</h3>
+          <p class="reviews-item-text">
+            This is delicious. It so rich and flavorful you don’t need to use as
+            many. I love topping an apple with almond butter and these chips for
+            a snack.
+          </p>
+        </div>
+      </li>
+
+      <li class="reviews-item">
+        <div class="reviews-item-person">
+          <img
+            src="../img/ellipse_irina_tydnyuk.png"
+            alt="Irina Tydnyuk"
+            srcset="../img/ellipse_irina_tydnyuk_2x.png"
+            width="80"
+            height="80"
+          />
+        </div>
+        <div class="reviews-item-wrap">
+          <h3 class="reviews-item-name">Irina Tydnyuk</h3>
+          <p class="reviews-item-text">
+            This is simply the best chocolate around, and I'm just thrilled to
+            support a local company! Best local chocolate - world class :)
+          </p>
+        </div>
+      </li>
+    </ul>
     <button type="button" class="btn" id="open-modal-review">Buy Now!</button>
-</div>
-      
+  </div>
+</section>
+
+      <section class="subscribe">
+    <div class="subscribe-container">
+      <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+      <p class="subscribe-text">
+        From the velvety texture to the rich and complex flavor, our New Chocolate
+        is a true indulgence that will leave you craving more. Made with only the
+        finest ingredients and handcrafted with the utmost care, each piece is a
+        work of art that is sure to please.
+      </p>
+      <button class="subscribe-button" type="button" id="open-modal-subscribe">Subscribe</button>
+    </div>
+  </section>
+  <section class="subscribes"></section>
     </main>
     <footer>
       <footer>
@@ -467,20 +651,227 @@
     <button type="button" class="btn close">close</button>
     <button type="button" class="btn" id="open-modal-thanks">Make Order!</button>
 </Div>
-    <div class="test-container-thanks" id="modal-thanks">
-    <p>THANKS!</p>
-    <button type="button" class="btn close">close</button>
+    <div class="container-modal-thanks" id="modal-thanks">
+  <div class="modal-thanks">
+    <botton class="modal-thanks-btn-close close" type="button">
+      <svg class="modal-thanks-icon">
+        <use href="../img/svg_sprite.svg#icon-x"></use>
+      </svg>
+    </botton>
+
+    <div class="modal-thanks-content">
+      <h3 class="modal-thanks-tittle">THANK YOU!</h3>
+
+      <p class="modal-thanks-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
+
+    <picture class="modal-thanks-img">
+      <source
+        srcset="
+          ../img/chocolate_bar_384x516.png    1x,
+          ../img/chocolate_bar_384x516_2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          ../img/chocolate_bar_296x399.png    1x,
+          ../img/chocolate_bar_296x399_2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+
+      <img src="../img/chocolate_bar_296x399.png" alt="chokolate" />
+    </picture>
+  </div>
 </div>
-    <Div class="test-container-order" id="modal-review">
-    <button type="button" class="btn close">close</button>
-    <button type="button" class="btn" id="open-modal-feedback">Leave a review!</button>
-</Div>
-    <div class="test-container-thanks" id="modal-feedback">
-    <p>THANKS FOR YOUR FEEDBACK!</p>
-    <button type="button" class="btn close">close</button>
+
+    <div class="container-modal-review" id="modal-review">
+    <div class="modal-review">
+      <button type="button" class="modal-review-close-btn close">
+        <svg class="modal-review-btn-icon">
+          <use href="../img/svg_sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <form class="modal-review-form">
+        <h3 class="modal-review-title">
+          LEAVE A REVIEW <br />ABOUT
+          <span class="modal-review-title-colorize">OUR CHOCOLATE</span>
+        </h3>
+        <label>
+          <span class="modal-review-item">
+            <input
+              class="modal-review-input"
+              type="text"
+              name="user-name"
+              placeholder="Name"
+            />
+          </span>
+        </label>
+        <label>
+          <span class="modal-review-item">
+            <input
+              class="modal-review-input"
+              type="email"
+              name="user-email"
+              placeholder="Enter your email"
+            />
+          </span>
+        </label>
+        <label>
+          <span class="modal-review-item">
+            <input
+              class="modal-review-input modal-review-input-number"
+              type="tel"
+              name="user-phone"
+              placeholder="Phone number"
+            />
+            <div class="modal-review-input-item">
+              <svg class="modal-review-icon">
+                <use href="../img/svg_sprite.svg#icon-Frame"></use>
+              </svg>
+              <span class="modal-review-input-exemple">+380</span>
+            </div>
+          </span>
+        </label>
+        <label>
+          <textarea
+            class="modal-review-coment"
+            name="user-text"
+            id="user-text"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+        <button class="modal-review-btn-send-data" type="button" id="open-modal-feedback">Send</button>
+      </form>
+    </div>
+  </div>
+    <div class="container-modal-feedback" id="modal-feedback">
+    <div class="modal-feedback">
+      <botton class="modal-feedback-btn-close close" type="button">
+        <svg class="modal-feedback-icon">
+          <use href="../img/svg_sprite.svg#icon-x"></use>
+        </svg>
+      </botton>
+      <div class="modal-feedback-content">
+        <h3 class="modal-feedback-tittle">
+          THANK YOU <br />
+          FOR YOUR FEEDBACK!
+        </h3>
+        <p class="modal-feedback-text">We are so happy to hear from you!</p>
+      </div>
+      <picture class="modal-feedback-img">
+        <source
+          srcset="
+            ../img/chocolate_bar_384x516.png    1x,
+            ../img/chocolate_bar_384x516_2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/chocolate_bar_296x399.png    1x,
+            ../img/chocolate_bar_296x399_2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/chocolate_bar_296x399.png" alt="chokolate" />
+      </picture>
+    </div>
+  </div>
+    <div class="container-modal-subscribe" id="modal-subscribe">
+  <div class="modal-subscribe">
+    <button class="modal-subscribe-btn-close close" type="button">
+      <svg class="modal-subscribe-icon">
+        <use href="../img/svg_sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <picture class="modal-subscribe-img">
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/pieces-of-chocolate-bars_538x196.jpg    1x,
+          ../img/pieces-of-chocolate-bars_538x196_2x.jpg 2x
+        "
+      />
+      <source
+        srcset="
+          ../img/pieces-of-chocolate-bars_311x169.jpg    1x,
+          ../img/pieces-of-chocolate-bars_311x169_2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img src="../img/pieces-of-chocolate-bars_311x169.jpg" alt="CHOCOLATE" />
+    </picture>
+    <h3 class="modal-subscribe-tittle">
+      EXPLORE OUR <br />
+      <span class="modal-subscribe-tittle-colorize">NEW CHOCOLATE</span> FIRST!
+    </h3>
+    <label class="modal-subscribe-input-wrap"
+      ><input
+        type="email"
+        name="user-name"
+        id="user-name"
+        class="modal-subscribe-input"
+      />
+      <button type="submit" class="modal-subscribe-btn-submit">Submit</button>
+    </label>
+  </div>
 </div>
-    
-    
+
+    <!--Shavala-->
+<div class="menu" >
+    <div class="container">
+      <div>
+        <button class="menu-close" type="button">
+          <svg class="menu-close-icon" width="12" height="12">
+            <use href="./images/svg_sprite.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="menu-list list">
+          <li class="menu-item">
+            <a class="menu-link link" href=""> Home </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">
+              How it’s made?
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href=""> Our products </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href=""> Top sellers </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href=""> Chocolate is loved </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="menu-soc-list list">
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="19" height="19">
+                <use href="./images/svg_sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-soc-item">
+            <a class="menu-soc-link link" href="">
+              <svg class="menu-soc-icon" width="19" height="16">
+                <use href="./images/svg_sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
     <!-- scripts -->
     
     
