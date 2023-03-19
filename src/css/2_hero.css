@@ -103,6 +103,7 @@
 }
 
 .hero-srcoll-down {
+  display: flex;
   align-items: center;
 }
 
@@ -122,13 +123,15 @@
   border: none;
   background-color: #ffffff;
   border-radius: 50%;
-  padding: auto;
   cursor: pointer;
   transition: matrix(0, 1, 1, 0, 0, 0);
 }
 
 .btn-scroll-icon {
   fill: #fd9222;
+  display: flex;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) {
