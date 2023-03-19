@@ -76,10 +76,6 @@
     align-items: center;
   }
   
-  .menu-soc-icon {
-    fill: #1e1823;
-    stroke: #ffffff;
-  }
   
   .menu-soc-icon:hover {
     stroke: #fd9222;

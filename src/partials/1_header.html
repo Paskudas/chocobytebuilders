@@ -1,62 +1,46 @@
-<div class="container-header">
-  <a href="" class="logo"
-    ><span class="logo-part">SIMPLY</span> CHOCOLATE
-    <svg width="21" height="21" class="chocko">
-      <use href="./src/img/svg_sprite.svg#icon-chocolate-2"></use>
+<header class="header">
+  <div class="container">
+    <a href="" class="logo"><span>SIMPLY </span> CHOCOLATE</a>
+    <svg width="21" height="21" class="logo-icon">
+      <use href="../img/svg_sprite.svg#icon-chocolate"></use>
     </svg>
-  </a>
-  <ul class="header-link">
-    <li><a href="" class="header-anchor">Home</a></li>
-    <li><a href="" class="header-anchor">How it’s made?</a></li>
-    <li><a href="" class="header-anchor">Our products</a></li>
-    <li><a href="" class="header-anchor">Top sellers</a></li>
-    <li><a href="" class="header-anchor">Chocolate is loved</a></li>
-  </ul>
-  <ul class="header-top">
-    <a href="">
-      <svg class="svg-header" width="24" height="24">
-        <use href="./src/img/svg_sprite.svg#icon-instagram-1"></use>
-      </svg>
-    </a>
-    <a href="">
-      <svg width="24" height="24">
-        <use href="./src/img/svg_sprite.svg#icon-twitter-1"></use>
-      </svg>
-    </a>
-  </ul>
-  <button id="open-menu">
-    <img src="./src/img/menu-03.png" alt="" width="28" height="28" />
-  </button>
-
-  <div id="menu" class="menu">
-    <button id="close-menu">
-      <svg width="28" height="28" class="header-menu-close">
-        <use href="./src/img/svg_sprite.svg#icon-Property-1Default"></use>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#">Home</a></li>
+        <li class="nav-list-item"><a href="#how-its-made">How it’s made?</a></li>
+        <li class="nav-list-item"><a href="">Our products</a></li>
+        <li class="nav-list-item"><a href="">Top sellers</a></li>
+        <li class="nav-list-item"><a href="">Chocolate is loved</a></li>
+      </ul>
+    </nav>
+    <address class="soc-media">
+      <ul class="soc-media-list">
+        <li>
+          <a href="https://www.instagram.com/" rel="noreferrer noopener">
+            <svg width="24" height="24" class="media-icon">
+              <use href="../img/svg_sprite.svg#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/?lang=ru" rel="noreferrer noopener">
+            <svg width="24" height="24" class="media-icon">
+              <use href="../img/svg_sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </address>
+    <button class="menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="32"
+        height="28" class="menu-burger" aria-label="menu's button open">
+        <use href="../img/svg_sprite.svg#icon-burger"></use>
+      </svg></button>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="modal-close js-close-menu" type="button">
+      <svg class="menu-icon" width="8px" height="8px">
+        <use href="./images/icons.svg#icon-close-modal"></use>
       </svg>
     </button>
-    <ul class="menu-list-header">
-      <li><a href="" class="menu-link-header">Home</a></li>
-      <li><a href="" class="menu-link-header">How it’s made?</a></li>
-      <li><a href="" class="menu-link-header">Top sellers</a></li>
-      <li><a href="" class="menu-link-header">Top sellers</a></li>
-      <li><a href="" class="menu-link-header">Chocolate is loved</a></li>
-    </ul>
-    <ul class="menu-social-header">
-      <li class="menu-header-svg">
-        <a href="">
-          <svg width="24px" height="24px" class="menu--svg">
-            <use href="./src/img/svg_sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-
-      <li class="menu-header-svg">
-        <a href="">
-          <svg width="24px" height="24px" class="menu--svg">
-            <use href="./src/img/svg_sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
   </div>
-</div>
+</header>
