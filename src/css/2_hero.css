@@ -137,6 +137,13 @@
   margin: auto;
 }
 
+@media screen and (min-width: 375px) {
+  .hero {
+    max-width: 375px;
+    margin: 20px auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(
@@ -149,12 +156,13 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    margin: 20px;
+    margin: 20px auto;
     padding-top: 671px;
     padding-bottom: 40px;
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 30px;
+    max-width: 768px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -229,7 +237,7 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 20px auto;
     padding-bottom: 40px;
     border-radius: 30px;
