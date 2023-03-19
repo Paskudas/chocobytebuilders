@@ -1,4 +1,33 @@
-<div class="test-container-thanks" id="modal-feedback">
-    <p>THANKS FOR YOUR FEEDBACK!</p>
-    <button type="button" class="btn close">close</button>
-</div>
+<div class="container-modal-feedback" id="modal-feedback">
+    <div class="modal-feedback">
+      <botton class="modal-feedback-btn-close close" type="button">
+        <svg class="modal-feedback-icon">
+          <use href="../img/svg_sprite.svg#icon-x"></use>
+        </svg>
+      </botton>
+      <div class="modal-feedback-content">
+        <h3 class="modal-feedback-tittle">
+          THANK YOU <br />
+          FOR YOUR FEEDBACK!
+        </h3>
+        <p class="modal-feedback-text">We are so happy to hear from you!</p>
+      </div>
+      <picture class="modal-feedback-img">
+        <source
+          srcset="
+            ../img/chocolate_bar_384x516.png    1x,
+            ../img/chocolate_bar_384x516_2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ../img/chocolate_bar_296x399.png    1x,
+            ../img/chocolate_bar_296x399_2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img src="../img/chocolate_bar_296x399.png" alt="chokolate" />
+      </picture>
+    </div>
+  </div>
