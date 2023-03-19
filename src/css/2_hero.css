@@ -142,8 +142,7 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    max-width: 1440px;
-    margin: 0 auto;
+    margin: 20px;
     padding-top: 671px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -214,6 +213,14 @@
       ),
       url(../img/chocolate-cover-cocoa-powder-deskt.jpg);
     padding-top: 381px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    max-width: 1440px;
+    margin: 20px;
+    padding-bottom: 28px;
+    border-radius: 30px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -227,8 +234,5 @@
         ),
         url(../img/chocolate-cover-cocoa-powder-deskt_2x.jpg);
     }
-  }
-
-  .hero-container {
   }
 }
