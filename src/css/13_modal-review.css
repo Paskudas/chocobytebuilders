@@ -1,4 +1,5 @@
 .container-modal-review {
+  position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
@@ -9,7 +10,10 @@
 }
 
 .modal-review {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 311px;
   height: 471px;
   padding: 32px 24px;
