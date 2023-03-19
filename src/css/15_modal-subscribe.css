@@ -1,0 +1,141 @@
+.container-modal-subscribe {
+  /* position: fixed;
+  z-index: 2; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(1, 1, 1, 0.3);
+}
+
+.modal-subscribe {
+  position: relative;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  overflow: hidden;
+  width: 311px;
+  min-height: 350px;
+  padding: 32px 24px;
+  background: #fafafa;
+  border-radius: 15px;
+}
+
+.modal-subscribe-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.modal-subscribe-btn-close {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+}
+
+.modal-subscribe-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+  transition: all 250ms;
+}
+
+.modal-subscribe-icon:is(:hover, :focus) {
+  width: 27px;
+  height: 27px;
+}
+
+.modal-subscribe-tittle {
+  padding-top: 169px;
+  padding-bottom: 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.modal-subscribe-tittle-colorize {
+  color: var(--orange);
+}
+
+.modal-subscribe-input-wrap {
+  position: relative;
+}
+
+.modal-subscribe-input {
+  width: 100%;
+  height: 45px;
+  padding: 14px 18px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 100px;
+}
+
+.modal-subscribe-btn-submit {
+  position: absolute;
+  right: 0;
+  height: 45px;
+  padding: 14px 28px;
+  border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-subscribe {
+    width: 538px;
+    min-height: 412px;
+    padding: 40px;
+  }
+
+  .modal-subscribe-btn-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .modal-subscribe-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-subscribe-icon:is(:hover, :focus) {
+    width: 32px;
+    height: 32px;
+  }
+
+  .modal-subscribe-tittle {
+    padding-top: 196px;
+    padding-bottom: 24px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+
+  .modal-subscribe-input {
+    height: 52px;
+    padding: 15px 24px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-subscribe-input-wrap {
+    display: flex;
+    gap: 8px;
+  }
+
+  .modal-subscribe-btn-submit {
+    position: static;
+    right: 0;
+    height: 45px;
+    padding: 14px 28px;
+    border-radius: 100px;
+  }
+}
