@@ -104,7 +104,9 @@
 
   .media-icon {
     display: block;
-    fill: red;
+    fill: white;
+    stroke: black;
+    
   }
 
   .menu-open-btn {
