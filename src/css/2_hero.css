@@ -103,9 +103,10 @@
   box-shadow: none;
 }
 
-.hero-srcoll-down {
+.hero-scroll-down {
   display: flex;
   align-items: center;
+  gap: 14px;
 }
 
 .hero-text {
@@ -200,6 +201,10 @@
     flex-direction: row;
     padding: 0;
   }
+
+  .hero-btn-scroll {
+  width: 38px;
+  height: 38px;
 
   .hero-scroll-down {
     display: flex;
