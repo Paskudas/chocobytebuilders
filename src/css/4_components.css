@@ -16,7 +16,7 @@
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: var (--black);
+    color: var(--black);
     margin-bottom: 24px;
     max-width: 283px;
     margin-left: auto;
