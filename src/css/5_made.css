@@ -12,7 +12,11 @@
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+<<<<<<< Updated upstream
     background-color: #fafafa;
+=======
+    background-color: #FAFAFA;
+>>>>>>> Stashed changes
 }
 .video-made{
     width: 100%;
@@ -68,6 +72,7 @@
     color: #111111;
 }
 .svg-made{
+    margin-top: 3px;
     width: 100%;
     max-width: 8px;
     height: 8px;
