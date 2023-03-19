@@ -1,0 +1,123 @@
+.container-modal-feedback {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(1, 1, 1, 0.3);
+  }
+  
+  .modal-feedback {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px;
+    height: 350px;
+    padding-right: 24px;
+    z-index: 2;
+    background-color: var(--orange);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .modal-feedback-btn-close {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 14px;
+    right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--creamy);
+    border: none;
+    border-radius: 50%;
+    transition: all 250ms;
+  }
+  
+  .modal-feedback-btn-close:is(:hover, :focus) {
+    width: 31px;
+    height: 31px;
+    background-color: #f8f8f8;
+  }
+  
+  .modal-feedback-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #f16529;
+  }
+  
+  .modal-feedback-content {
+    width: 219px;
+    padding-top: 84px;
+    margin-left: auto;
+  }
+  
+  .modal-feedback-tittle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--creamy);
+  }
+  
+  .modal-feedback-text {
+    width: 190px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  
+  .modal-thanks-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal-feedback {
+      width: 516px;
+      height: 414px;
+      padding-right: 49px;
+    }
+  
+    .modal-feedback-btn-close {
+      width: 40px;
+      height: 40px;
+      top: 24px;
+      right: 24px;
+    }
+  
+    .modal-feedback-btn-close:is(:hover, :focus) {
+      width: 43px;
+      height: 43px;
+    }
+  
+    .modal-feedback-icon {
+      width: 22px;
+      height: 22px;
+    }
+  
+    .modal-feedback-content {
+      width: 297px;
+      padding-top: 163px;
+    }
+  
+    .modal-feedback-tittle {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+  
+    .modal-feedback-text {
+      width: 297px;
+      font-size: 18px;
+      line-height: 1.33;
+    }
+  }
