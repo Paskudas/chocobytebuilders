@@ -12,10 +12,6 @@
     margin: 0 auto;
 }
 
-.advantages-title {
-    display: none;
-}
-
 .advantages-list {
     display: flex;
     justify-content: space-between;
