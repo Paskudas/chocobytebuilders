@@ -130,3 +130,9 @@
   transform: translateX(0);
 }
 
+.modal-close {
+  margin-left: auto;
+stroke:white;
+background-color: transparent;
+}
+
