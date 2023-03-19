@@ -1,6 +1,6 @@
 .container-modal-subscribe {
-  /* position: fixed;
-  z-index: 2; */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -11,10 +11,10 @@
 
 .modal-subscribe {
   position: relative;
-  /* position: absolute; */
-  /* top: 50%;
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   overflow: hidden;
   width: 311px;
   min-height: 350px;
