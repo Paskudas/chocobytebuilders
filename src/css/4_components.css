@@ -132,6 +132,10 @@
     transition: transform 250ms cubic-bezier(.59, .32, .83, .67);
 }
 
+.components-overlay::-webkit-scrollbar {
+    display: none;
+}
+
 .components-item-first:hover .components-overlay,
 .components-item-first:focus .components-overlay,
 .components-item-second:hover .components-overlay,
@@ -200,6 +204,11 @@
     max-height: 146px;
     overflow-y: scroll;
 }
+
+.components-overlay-description::-webkit-scrollbar {
+    display: none;
+}
+
 
 @media screen and (min-width:480px) {
     .components-container {
