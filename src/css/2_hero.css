@@ -29,14 +29,14 @@
         url(../img/chocolate-cover-cocoa-powder-mob_2x.jpg);
     }
   }
-  
-  .hero-container {
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  
+
+.hero-container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
   .hero-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -47,62 +47,72 @@
     color: #ffffff;
     text-align: left;
     max-width: 329px;
+    margin-bottom: 32px;
     width: 100%;
   }
-  
+
   .hero-basic {
     display: flex;
     flex-direction: column;
   }
-  
-  .main-hero-btn {
-    display: flex;
-    gap: 14px;
+
+.hero-btn {
+  margin-top: 32px;
+  padding: 0;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
   }
   
-  .hero-btn {
-    margin-top: 32px;
-    padding: 0;
-    gap: 32px;
-    display: flex;
-    flex-direction: column;
-  }
+.main-hero-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-buy-btn {
+  box-sizing: border-box;
+  min-width: 120px;
+  min-height: 41px;
+  padding: 12px 28px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: calc(17 / 14);
+  text-align: center;
+  background: #FD9222;
+  border: none;
+  border-radius: 100px;
+}
+
+.hero-buy-btn:is(:hover, :focus) {
+  color: #FD9222;
+  background: #FCF1E0;
+}
   
-  .hero-list {
-    list-style: none;
+.hero-made-btn {
+  display: block;
+  box-sizing: border-box;
+  min-width: 159px;
+  min-height: 41px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: center;
+  padding: 12px 28px;
+  color: #FFFFFF;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
   }
-  
-  .hero-buy-btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-    min-width: 120px;
-    height: 41px;
-    padding: 12px 28px;
-    background: #fd9222;
-    border-radius: 100px;
-    border-color: transparent;
-  }
-  
-  .hero-made-btn {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-    min-width: 159px;
-    height: 41px;
-    padding: 12px 28px;
-    background: transparent;
-    border: 1px solid #ffffff;
-    border-radius: 100px;
-    box-shadow: none;
-  }
-  
+
+.hero-made-btn:is(:hover, :focus) {
+  color: #FD9222;
+  background: white;
+  border: 1px solid #FD9222;
+}
+
   .hero-scroll-down {
     display: flex;
     align-items: center;
