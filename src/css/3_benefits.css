@@ -1,13 +1,12 @@
 .advantages{
     background-color: var(--dark-purple);
-    margin-top: 71px;
+    padding-top: 29px;
+    padding-bottom: 36px;
 }
 
 .advantages-container {
     width: 100%;
-    padding-top: 29px;
     padding-left: 20px;
-    padding-bottom: 36px;
     padding-right: 47px;
     margin: 0 auto;
 }
@@ -64,6 +63,7 @@
 
 
 @media screen and (min-width:480px) {
+    
     .advantages-container {
         max-width: 375px;
     }
@@ -73,14 +73,13 @@
 @media screen and (min-width:768px) {
 
     .advantages {
-        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     
     .advantages-container {
         max-width: 768px;
-        padding-top: 50px;
         padding-left: 32px;
-        padding-bottom: 50px;
         padding-right: 60px;
     }
 
@@ -100,16 +99,10 @@
 }
 
 @media screen and (min-width:1200px) {
-    
-    .advantages {
-        margin-top: 72px;
-    }
-    
+
     .advantages-container {
         max-width: 1200px;
-        padding-top: 50px;
         padding-left: 50px;
-        padding-bottom: 50px;
         padding-right: 50px;
     }
     
@@ -124,7 +117,6 @@
 
     .advantages-item {
         position: relative;
-        padding-right: 22px;
     }
 
     .advantages-item:not(:last-child):before {
