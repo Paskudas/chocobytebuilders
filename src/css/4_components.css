@@ -5,7 +5,7 @@
 }
 
 .components-container {
-    width: 100%;
+    max-width: 375px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
@@ -211,9 +211,6 @@
 
 
 @media screen and (min-width:480px) {
-    .components-container {
-        max-width: 375px;
-    }
 
     .components-item-first,
     .components-item-second,

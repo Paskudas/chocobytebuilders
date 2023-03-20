@@ -5,7 +5,7 @@
 }
 
 .advantages-container {
-    width: 100%;
+    max-width: 375px;
     padding-left: 20px;
     padding-right: 47px;
     margin: 0 auto;
@@ -64,9 +64,6 @@
 
 @media screen and (min-width:480px) {
     
-    .advantages-container {
-        max-width: 375px;
-    }
 }
 
 
