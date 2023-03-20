@@ -1,91 +1,152 @@
-<Div class="test-container-order" id="modal-order">
-    <button type="button" class="btn close">close</button>
-    <button type="button" class="btn" id="open-modal-thanks">Make Order!</button>
-</Div>
-<!--div class="backdrop is-hidden" data-modal-order>
-    <div class="modal-order">
-      <button type="button" class="modal-order-close" data-modal-order-close>
-        <svg class="modal-order-close-icon" width="28" height="28">
-          <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+<section>
+  <div class="container-order" id="modal-order">
+    <div class="order-window">
+      <button type="button" class="btn-close close">
+        <svg class="order-close-icon" width="28" height="28">
+          <use href="../img/svg_sprite.svg#icon-x"></use>
         </svg>
       </button>
-      <p class="modal-order-title"><span class="modal-order-title-span">BUY</span> NOW</p>
-      <div>
-        <ul class="basket list">
-          <li class="basket-item">
-            <img src="./images/choc1.svg" alt="" width="167" height="148">
-            <div class="modal-order-weight">
-              <p class="modal-order-weight-text">100 g</p>
+      <div class="order-container">
+        <h2 class="order-title">
+          <span class="buy">Buy</span><span class="now"> Now</span>
+        </h2>
+        <ul class="order-list-prise">
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="../img/chocolate-pieces_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-100"
+                class="order-form-checkbox"
+                name="prise-item-100"
+                required
+              />
+              <label for="prise-item-100" class="modal-lable checkbox"
+                ><p class="one-part">100 g</p>
+              </label>
             </div>
           </li>
-          <li class="basket-item">
-            <img src="./images/choc1.svg" alt="" width="120" height="107">
-            <div class="modal-order-weight">
-              <p class="modal-order-weight-text">100 g</p>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="../img/chocolate-pieces-piramid_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-200"
+                class="order-form-checkbox"
+                name="prise-item-200"
+                required
+              />
+              <label for="prise-item-200" class="modal-lable checkbox"
+                ><p class="two-parts">200 g</p>
+              </label>
             </div>
           </li>
-          <li class="basket-item">
-            <img src="./images/choc2.svg" alt="" width="120" height="107">
-            <div class="modal-order-weight">
-              <p class="modal-order-weight-text">200 g</p>
-            </div>
-          </li>
-          <li class="basket-item">
-            <img src="./images/choc3.svg" alt="" width="120" height="107">
-            <div class="modal-order-weight">
-              <p class="modal-order-weight-text">300 g</p>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="../img/transparent-chocolate-bar_120x111.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-300"
+                class="order-form-checkbox"
+                name="prise-item-300"
+                required
+              />
+              <label for="prise-item-300" class="modal-lable checkbox"
+                ><p class="three-parts">300 g</p>
+              </label>
             </div>
           </li>
         </ul>
+        <ul class="order-list"></ul>
+        <div class="order-tumb">
+          <ul class="order-data">
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Personal information
+                <div class="person-order">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="user_name"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Surname"
+                    name="user_surname"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                </div>
+              </lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Email<input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  class="order-point"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Phone number<input
+                  type="tel"
+                  placeholder="Phone number"
+                  name="phone_nuber"
+                  class="order-point"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="XXX-XXX-XX-XX"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Card number<input
+                  type="text"
+                  placeholder="Enter  card"
+                  name="card_number"
+                  class="order-point"
+                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                  title="XXXX-XXXX-XXXX-XXXX"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Coment<textarea
+                  name="coment"
+                  id="coment"
+                  class="order-coment-box"
+                  placeholder="Enter text"
+                ></textarea>
+              </lable>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="modal-order-slider">
-        <svg class="modal-order-slider-icon" width="80" height="13">
-          <use href="./images/symbol-defs.svg#slider"></use>
-        </svg>
-      </div>
-      <form class="modal-order-form">
-        <label class="modal-order-form-label"><span class="input-text">Personal information</span>
-          <div class="input-wrap">
-            <div class="input-wrap-name">
-              <input type="text" class="modal-order-input" name="name" placeholder="Name">
-              <input type="text" class="modal-order-input" name="name" placeholder="Surname">
-            </div>
-          </div>
-        </label>
-        <label class="modal-order-form-label"><span class="input-text">Email</span>
-          <div class="input-wrap">
-            <input type="email" class="modal-order-input" name="email" placeholder="Enter your email">
-          </div>
-        </label>
-        <label class="modal-order-form-label"><span class="input-text">Phone number</span>
-          <div class="input-wrap">
-            <div class="input-wrap-tel">
-              <input type="tel" class="modal-order-input" name="phone" placeholder="Phone number">
-              <svg class="modal-order-icon" width="32" height="32">
-                <use href="./images/symbol-defs.svg#ukr"></use>
-              </svg>
-              <svg class="modal-order-icon-tel" width="43" height="22">
-                <use href="./images/symbol-defs.svg#text-tel"></use>
-              </svg>
-            </div>
-          </div>
-        </label>
-        <label class="modal-order-form-label"><span class="input-text">Card number</span>
-          <div class="input-wrap">
-            <div class="input-wrap">
-              <input type="tel" class="modal-order-input" name="phone" placeholder="Enter card">
-              <svg class="modal-order-icon-card" width="44" height="30">
-                <use href="./images/symbol-defs.svg#mc"></use>
-              </svg>
-            </div>
-          </div>
-        </label>
-        <label class="modal-order-form-label"><span class="input-text">Comment</span>
-          <textarea name="textarea" class="modal-order-textarea" placeholder="Enter text"></textarea>
-        </label>
-      </form>
-      <div class="modal-order-btn-wrap">
-        <button type="submit" class="modal-order-btn">Submit</button>
-      </div>
+      <button type="submit" class="btn-submit" id="open-modal-thanks">
+        Submit
+      </button>
     </div>
-  </!--div-->
+  </div>
+</section>
