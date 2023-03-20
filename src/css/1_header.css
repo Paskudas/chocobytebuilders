@@ -109,6 +109,10 @@
     letter-spacing: -0.02em;
   }
 
+  .nav-list-item:is(:hover,:focus) {
+    color: #FD9222;
+  }
+
   .soc-media {
     display: block;
     margin-left: auto;
