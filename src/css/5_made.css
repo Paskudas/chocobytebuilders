@@ -28,6 +28,29 @@
     max-width: 375px;
     height: 500px;
 }
+.input-made-hiden{
+    display: none;
+}
+.img-made{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    max-height: 500px;
+    height: 100%;
+}
+.svg-play-made{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+#radio-made:checked + label{
+    display: none;
+    
+}
 .h2-made{
     margin-bottom: 32px;
     font-weight: 600;
