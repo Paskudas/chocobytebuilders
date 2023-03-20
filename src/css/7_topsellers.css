@@ -32,7 +32,6 @@
   align-content: center;
   gap: 16px;
 }
-
 .topseller-img {
   width: 368px;
   height: 464px;
@@ -56,8 +55,6 @@
   color: var(--black);
 }
 */
-
-/*
 .top-sellers-section {
   margin-bottom: 72px;
   background: #fafafa;
@@ -108,9 +105,6 @@ img {
   display: block;
   max-width: 335px;
   border-radius: 15px 15px 15px 15px;
-  overflow: hidden;
-
-  margin-bottom: 20px;
 }
 
 .top-sellers-item:nth-child(3) {
@@ -137,7 +131,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  font-family: Montserrat;
+  font-family: var(--main-font);
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -153,56 +147,24 @@ img {
   color: var(--orange);
 }
 
-/*---MOBILE_CSS----*/
-/*
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .top-sellers-section {
-    margin-bottom: 0px;
-  }
+.top-sellers-img-wrap {
+  overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
 
+/*---MOBILE_CSS----*/
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .top-sellers-container {
-    position: relative;
     min-width: 320px;
     max-width: 375px;
     background-color: #fafafa;
   }
-
-  .top-sellers-flex {
-    display: block;
-  }
-
-  .top-sellers-wrap {
-    display: block;
-  }
-
-  .top-sellers-list {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .top-sellers-item:last-child {
-    margin-bottom: 20px;
-  }
-
-  .top-sellers-item:nth-child(1) {
-    margin-bottom: 142px;
-  }
-
-  .top-sellers-subtitle {
-    position: absolute;
-    top: 520px;
-    letter-spacing: -0.02em;
-    margin-bottom: 32px;
-    margin-top: 20px;
-  }
-
-  .top-sellers-btn {
-    margin-top: 0.5px;
-  }
 }
 
 /*---TABLET_CSS---*/
-/*
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-sellers-section {
     margin-bottom: 100px;
@@ -219,9 +181,12 @@ img {
     margin-bottom: 50px;
   }
 
+  .top-sellers-img-wrap {
+    margin-bottom: 32px;
+  }
+
   .top-sellers-item {
     max-width: 344px;
-    margin-bottom: 32px;
   }
 
   .top-sellers-item:last-child {
@@ -243,12 +208,12 @@ img {
     padding: 14px 40px;
     margin-left: auto;
     margin-right: 0;
-
     font-size: 18px;
   }
 }
+
 /*--DESKTOP_CSS---*/
-/*
+
 @media screen and (min-width: 1200px) {
   .top-sellers-section {
     margin-bottom: 144px;
@@ -260,9 +225,12 @@ img {
     padding-right: 32px;
   }
 
+  .top-sellers-img-wrap {
+    margin-bottom: 32px;
+  }
+
   .top-sellers-item {
     max-width: 368px;
-    margin-bottom: 32px;
   }
 
   .top-sellers-item:last-child {
@@ -282,6 +250,7 @@ img {
   .top-sellers-btn {
     margin-right: auto;
     margin-right: 0;
+    width: 162px;
+    margin-left: 590px;
   }
 }
-*/
