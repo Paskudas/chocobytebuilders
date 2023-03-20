@@ -10,8 +10,7 @@
   background-position: center;
   background-size: cover;
   flex-grow: 1;
-  max-width: 1440px;
-  margin: 20px auto;
+  margin: auto;
   padding-bottom: 28px;
   padding-top: 395px;
   padding-right: 16px;
@@ -34,7 +33,6 @@
 
 .hero-container {
   width: 100%;
-
   margin: 0 auto;
   justify-content: center;
 }
@@ -146,7 +144,7 @@
 @media screen and (min-width: 375px) {
   .hero {
     max-width: 375px;
-    margin: 20px auto;
+    margin: auto;
   }
 }
 
@@ -162,7 +160,7 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    margin: 20px auto;
+    margin: auto;
     padding-top: 671px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -244,7 +242,7 @@
     background-size: cover;
     flex-grow: 1;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: auto;
     padding-bottom: 40px;
     border-radius: 30px;
   }
