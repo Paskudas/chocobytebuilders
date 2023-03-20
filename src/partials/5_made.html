@@ -2,16 +2,41 @@
     <div class="made-container">
         <h2 class="h2-made">HOW IT’S <span class="h2-made-sec">MADE?</span></h2>
         <div class="screen-1200">
-            <div class="video-made">
-                <iframe 
-                    src="https://www.youtube.com/embed/DISjdfkSjc8" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen
-                    class="iframe-made"
-                ></iframe>
-            </div>
+            <div class="screen-1200">
+                <div class="video-made">
+                    <iframe 
+                        src="https://www.youtube.com/embed/DISjdfkSjc8" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen
+                        class="iframe-made"
+                    ></iframe>
+                    <input type="radio" id="radio-made" class="input-made-hiden">
+                    <label for="radio-made">
+                        <picture>
+                            <source
+                                media="(min-width: 1200px)" 
+                                srcset="/img/How-its-made_deskt_600x400.jpg 1x, /img/How-its-made_deskt_600x400_2x.jpg 2x" 
+                                class="img-made"
+                            >
+                            <source 
+                                media="(min-width: 768px)" 
+                                srcset="/img/How-its-made_tabl_614x400.jpg 1x, /img/How-its-made_tabl_614x400_2x.jpg 2x" 
+                                class="img-made"
+                            >
+                            <source 
+                                media="(max-width: 767px)" 
+                                srcset="/img/How-its-made_mob_335x500.jpg 1x, /img/How-its-made_mob_335x500_2x.jpg 2x" 
+                                class="img-made"
+                            >
+                            <img src="/img/How-its-made_mob_335x500.jpg" class="img-made" alt="">
+                        </picture>
+                        <svg class="svg-play-made">
+                            <use href="../img/svg_sprite.svg#icon-play-made"></use>
+                        </svg>
+                    </label>
+                </div>
             <div class="div-list">
                 <h3 class="h3-made">Try  our chocolates today and discover the perfect balance of flavor</h3>
                 <ul class="list-made">
