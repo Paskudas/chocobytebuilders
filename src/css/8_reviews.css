@@ -1,5 +1,5 @@
 .reviews {
-  padding-top: 72px;
+  /*padding-top: 72px;*/
   padding-bottom: 72px;
   background-color: #fafafa;
   font-family: 'Montserrat', sans-serif;
@@ -84,7 +84,7 @@
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     padding-bottom: 100px;
   }
 
@@ -124,7 +124,7 @@
 
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding-top: 128px;
+    /*padding-top: 128px;*/
     padding-bottom: 128px;
   }
 
