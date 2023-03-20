@@ -1,7 +1,7 @@
 .reviews {
   padding-top: 72px;
   padding-bottom: 72px;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,7 +29,7 @@
   display: flex;
   position: relative;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 .reviews-item-person {
   max-width: 335px;
@@ -149,4 +149,24 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+}
+.btn-container {
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.btn-review {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--black);
+  min-width: 120px;
+  height: 41px;
+  padding: 12px 28px;
+  background: transparent;
+  border: 1px solid;
+  border-radius: 100px;
+  border-color: var(--orange);
 }

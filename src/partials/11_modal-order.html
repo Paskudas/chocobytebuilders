@@ -1,4 +1,152 @@
-<Div class="test-container-order" id="modal-order">
-    <button type="button" class="btn close">close</button>
-    <button type="button" class="btn" id="open-modal-thanks">Make Order!</button>
-</Div>
+<section>
+  <div class="container-order" id="modal-order">
+    <div class="order-window">
+      <button type="button" class="btn-close close">
+        <svg class="order-close-icon" width="28" height="28">
+          <use href="/img/svg_sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <div class="order-container">
+        <h2 class="order-title">
+          <span class="buy">Buy</span><span class="now"> Now</span>
+        </h2>
+        <ul class="order-list-prise">
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/chocolate-pieces_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-100"
+                class="order-form-checkbox"
+                name="prise-item-100"
+                required
+              />
+              <label for="prise-item-100" class="modal-lable checkbox"
+                ><p class="one-part">100 g</p>
+              </label>
+            </div>
+          </li>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/chocolate-pieces-piramid_167x148.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-200"
+                class="order-form-checkbox"
+                name="prise-item-200"
+                required
+              />
+              <label for="prise-item-200" class="modal-lable checkbox"
+                ><p class="two-parts">200 g</p>
+              </label>
+            </div>
+          </li>
+          <li class="prise-item">
+            <div class="prise-tumb">
+              <img
+                src="/img/transparent-chocolate-bar_120x111.png"
+                alt=""
+                class="prise-object"
+              />
+              <input
+                type="checkbox"
+                id="prise-item-300"
+                class="order-form-checkbox"
+                name="prise-item-300"
+                required
+              />
+              <label for="prise-item-300" class="modal-lable checkbox"
+                ><p class="three-parts">300 g</p>
+              </label>
+            </div>
+          </li>
+        </ul>
+        <ul class="order-list"></ul>
+        <div class="order-tumb">
+          <ul class="order-data">
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Personal information
+                <div class="person-order">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="user_name"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Surname"
+                    name="user_surname"
+                    class="order-point"
+                    pattern="^[a-zA-Z]+$"
+                    minlength="2"
+                    required
+                  />
+                </div>
+              </lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Email<input
+                  type="email"
+                  placeholder="Enter your email"
+                  name="email"
+                  class="order-point"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Phone number<input
+                  type="tel"
+                  placeholder="Phone number"
+                  name="phone_nuber"
+                  class="order-point"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  title="XXX-XXX-XX-XX"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Card number<input
+                  type="text"
+                  placeholder="Enter  card"
+                  name="card_number"
+                  class="order-point"
+                  pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                  title="XXXX-XXXX-XXXX-XXXX"
+                  required
+              /></lable>
+            </li>
+            <li class="order-data-item">
+              <lable class="data-item"
+                >Coment<textarea
+                  name="coment"
+                  id="coment"
+                  class="order-coment-box"
+                  placeholder="Enter text"
+                ></textarea>
+              </lable>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button type="submit" class="btn-submit" id="open-modal-thanks">
+        Submit
+      </button>
+    </div>
+  </div>
+</section>

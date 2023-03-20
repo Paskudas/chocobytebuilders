@@ -1,11 +1,14 @@
 .components {
     background-color: #FAFAFA;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .components-container {
     width: 100%;
     margin: 0 auto;
-    padding: 72px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .components-title {
@@ -55,7 +58,7 @@
 .components-item-first {
     position: relative;
     overflow: hidden;
-    width: 335px;
+    width: 100%;
     height: 270px;
     background-color: var(--orange);
     border-radius: 15px;
@@ -65,7 +68,7 @@
 .components-item-fourth {
     position: relative;
     overflow: hidden;
-    width: 335px;
+    width: 100%;
     height: 270px;
     background: #FFFFFF;
     border: 1px solid var(--orange);
@@ -75,7 +78,7 @@
 .components-item-third {
     position: relative;
     overflow: hidden;
-    width: 335px;
+    width: 100%;
     height: 270px;
     background: var(--dark-purple);
     border-radius: 15px;
@@ -127,6 +130,10 @@
     overflow: auto;
     transform: translate(0, 100%);
     transition: transform 250ms cubic-bezier(.59, .32, .83, .67);
+}
+
+.components-overlay::-webkit-scrollbar {
+    display: none;
 }
 
 .components-item-first:hover .components-overlay,
@@ -194,21 +201,38 @@
     line-height: 1.29;
     letter-spacing: -0.02em;
     color: var(--black);
+    max-height: 146px;
+    overflow-y: scroll;
 }
+
+.components-overlay-description::-webkit-scrollbar {
+    display: none;
+}
+
 
 @media screen and (min-width:480px) {
     .components-container {
         max-width: 375px;
     }
+
+    .components-item-first,
+    .components-item-second,
+    .components-item-third,
+    .components-item-fourth {
+        width: 335px;
+    }
 }
 
 @media screen and (min-width:768px) {
 
+    .components {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .components-container {
         max-width: 768px;
-        padding-top: 50px;
         padding-left: 32px;
-        padding-bottom: 50px;
         padding-right: 32px;
     }
 
@@ -233,11 +257,14 @@
 
 @media screen and (min-width:1200px) {
 
+    .components {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
     .components-container {
         max-width: 1200px;
-        padding-top: 128px;
         padding-left: 32px;
-        padding-bottom: 128px;
         padding-right: 31px;
     }
 
