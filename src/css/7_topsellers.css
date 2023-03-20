@@ -56,7 +56,8 @@
 }
 */
 .top-sellers-section {
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
+  padding-bottom: 72px;
   background: #fafafa;
 }
 
@@ -97,9 +98,12 @@
   list-style: none;
 }
 
-img {
+.topseller-img {
   width: 100%;
 }
+/*img {
+  width: 100%;
+}*/
 
 .top-sellers-item {
   display: block;
@@ -167,7 +171,8 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .top-sellers-section {
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
+    padding-bottom: 100px;
   }
 
   .top-sellers-container {
@@ -216,7 +221,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .top-sellers-section {
-    margin-bottom: 144px;
+    /*margin-bottom: 144px;*/
+    padding-bottom: 128px;
   }
 
   .top-sellers-container {
