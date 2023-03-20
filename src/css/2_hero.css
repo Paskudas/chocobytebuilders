@@ -70,7 +70,7 @@
   gap: 14px;
 }
 
-.hero-buy-btn {
+.hero-buy-button {
   box-sizing: border-box;
   min-width: 120px;
   min-height: 41px;
@@ -86,7 +86,7 @@
   border-radius: 100px;
 }
 
-.hero-buy-btn:is(:hover, :focus) {
+.hero-buy-button:is(:hover, :focus) {
   color: #FD9222;
   background: #FCF1E0;
 }
