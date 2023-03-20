@@ -10,6 +10,9 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .order-window {
+  min-width: 610px;
+  height: 100%;
+  overflow: scroll;
   padding: 48px;
   background-color: #fafafa;
   width: 608px;
@@ -48,9 +51,7 @@
 .order-list-prise {
   margin-top: 32px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
   gap: 16px;
 }
 
@@ -138,7 +139,7 @@
   order: 1;
   flex-grow: 0;
 }
-.btn-submit{
+.btn-submit {
   margin-top: 18px;
   padding: 16px 40px;
   color: #ffffff;
