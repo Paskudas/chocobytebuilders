@@ -6,24 +6,34 @@
     </svg>
     <nav class="navigation">
       <ul class="nav-list">
-        <li class="nav-list-item"><a href="#">Home</a></li>
-        <li class="nav-list-item"><a href="#how-its-made">How it’s made?</a></li>
-        <li class="nav-list-item"><a href="">Our products</a></li>
-        <li class="nav-list-item"><a href="">Top sellers</a></li>
-        <li class="nav-list-item"><a href="">Chocolate is loved</a></li>
+        <li class="nav-list-item"><a href="#home">Home</a></li>
+        <li class="nav-list-item">
+          <a href="#how-its-made">How it’s made?</a>
+        </li>
+        <li class="nav-list-item"><a href="#products">Our products</a></li>
+        <li class="nav-list-item"><a href="#topsellers">Top sellers</a></li>
+        <li class="nav-list-item"><a href="#reviews">Chocolate is loved</a></li>
       </ul>
     </nav>
     <address class="soc-media">
       <ul class="soc-media-list">
         <li>
-          <a href="https://www.instagram.com/" rel="noreferrer noopener" class="soc-media-item">
+          <a
+            href="https://www.instagram.com/"
+            rel="noreferrer noopener"
+            class="soc-media-item"
+          >
             <svg width="24" height="24" class="media-icon">
               <use href="/img/svg_sprite.svg#icon-inst"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/?lang=ru" rel="noreferrer noopener" class="soc-media-item">
+          <a
+            href="https://twitter.com/?lang=ru"
+            rel="noreferrer noopener"
+            class="soc-media-item"
+          >
             <svg width="24" height="24" class="media-icon">
               <use href="/img/svg_sprite.svg#icon-twitter"></use>
             </svg>
@@ -31,15 +41,14 @@
         </li>
       </ul>
     </address>
-    <button class="menu-open-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="32"
-        height="28" class="menu-burger" aria-label="menu's button open">
+    <button class="menu-open-btn" id="open-modal-mobile">
+      <svg
+        width="32"
+        height="28"
+        class="menu-burger"
+        aria-label="menu's button open"
+      >
         <use href="/img/svg_sprite.svg#icon-burger"></use>
-      </svg></button>
-  </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="modal-close js-close-menu" type="button">
-      <svg class="menu-icon" width="28px" height="28px">
-        <use href="/img/icons.svg#icon-x"></use>
       </svg>
     </button>
   </div>
