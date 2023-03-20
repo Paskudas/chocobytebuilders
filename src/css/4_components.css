@@ -1,11 +1,14 @@
 .components {
     background-color: #FAFAFA;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .components-container {
     width: 100%;
     margin: 0 auto;
-    padding: 72px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .components-title {
@@ -213,11 +216,14 @@
 
 @media screen and (min-width:768px) {
 
+    .components {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .components-container {
         max-width: 768px;
-        padding-top: 50px;
         padding-left: 32px;
-        padding-bottom: 50px;
         padding-right: 32px;
     }
 
@@ -242,11 +248,14 @@
 
 @media screen and (min-width:1200px) {
 
+    .components {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
     .components-container {
         max-width: 1200px;
-        padding-top: 128px;
         padding-left: 32px;
-        padding-bottom: 128px;
         padding-right: 31px;
     }
 
