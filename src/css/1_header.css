@@ -43,6 +43,8 @@
 .menu-burger {
   display: block;
   stroke: black;
+  width: 28px;
+  height: 28px;
 }
 
 .navigation,
@@ -61,6 +63,11 @@
       padding-left: 32px;
       padding-right: 32px;
     }
+
+  .menu-burger {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -71,6 +78,16 @@
     padding-right: 32px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .navigation {
@@ -107,6 +124,10 @@
     fill: white;
     stroke: black;
     
+  }
+
+  .media-icon:is(:hover,:focus) {
+    stroke: #FD9222
   }
 
   .menu-open-btn {
