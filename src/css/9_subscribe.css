@@ -59,6 +59,9 @@
   border-radius: 100px;
   display: block;
   margin: 0 auto;
+  transition-property: background-color, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button:is(:hover, :focus) {

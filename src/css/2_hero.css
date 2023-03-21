@@ -89,6 +89,9 @@
   background: #fd9222;
   border: none;
   border-radius: 100px;
+  transition-property: background-color, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-buy-button:is(:hover, :focus) {
@@ -109,7 +112,10 @@
   padding: 12px 28px;
   color: #ffffff;
   border: 1px solid #ffffff;
-  border-radius: 100px;
+  border-radius: 100px;  
+  transition-property: background-color, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-made-btn:is(:hover, :focus) {
@@ -147,6 +153,9 @@
   border-radius: 50%;
   cursor: pointer;
   transition: matrix(0, 1, 1, 0, 0, 0);
+  transition-property: background-color, cursor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-scroll-icon {
