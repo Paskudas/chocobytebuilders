@@ -88,6 +88,8 @@
   right: 0;
   height: 45px;
   padding: 14px 28px;
+  color: #ffffff;
+  background: #FD9222;
   border-radius: 100px;
 }
 
@@ -128,6 +130,7 @@
   }
 
   .modal-subscribe-input-wrap {
+    width: 100%;
     display: flex;
     gap: 8px;
   }
@@ -144,4 +147,8 @@
   opacity: 0;
   visibility: inherit;
   pointer-events: none;
+}
+.subscribe-tumb {
+  display: flex;
+  justify-content: space-between;
 }
