@@ -27,6 +27,12 @@
 
 .reviews-item {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 335px;
+  min-width: 335px;
+  display: flex;
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -127,7 +133,11 @@
   }
 
   .reviews-list {
+    min-width: 0;
     gap: 16px;
+  }
+  .review-slider{
+    min-width: 0;
   }
 
   .reviews-item-person {
@@ -181,5 +191,6 @@
     padding-right: 24px;
   }
 }
+
 
 
