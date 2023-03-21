@@ -1,60 +1,4 @@
-/*
-.topsellers-container {
-  margin-top: 128px;
-  margin-bottom: 128px;
-  min-width: 335px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-.topselles-title {
-  margin-bottom: 50px;
-  font-family: var(--main-font);
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-.top {
-  color: var(--orange);
-}
-.sellers {
-  color: var(--black);
-}
-.topseller-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  gap: 16px;
-}
-.topseller-img {
-  width: 368px;
-  height: 464px;
-  border-radius: 15px;
-}
-.topseller-tumb {
-  padding-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: center;
-}
-.topseller-text {
-  display: block;
-  width: 408px;
-  font-family: var(--main-font);
-    font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2;
-    letter-spacing: -0.02em;
-  color: var(--black);
-}
-*/
+
 .top-sellers-section {
   /*margin-bottom: 72px;*/
   padding-bottom: 72px;
@@ -76,7 +20,7 @@
 
   font-family: var(--main-font);
   font-weight: 600;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -101,9 +45,6 @@
 .topseller-img {
   width: 100%;
 }
-/*img {
-  width: 100%;
-}*/
 
 .top-sellers-item {
   display: block;
@@ -127,6 +68,7 @@
 }
 
 .top-sellers-btn {
+  margin-top: 20px;
   display: block;
   width: 120px;
   height: 41px;
@@ -166,6 +108,14 @@
     min-width: 320px;
     max-width: 375px;
     background-color: #fafafa;
+  }
+  .topsellers-tumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top-sellers-btn {
+    margin-top: 20px;
   }
 }
 
@@ -213,9 +163,14 @@
     width: 162px;
     height: 50px;
     padding: 14px 40px;
-    margin-left: auto;
-    margin-right: 0;
     font-size: 18px;
+    margin: 0;
+  }
+  .topsellers-tumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   margin: 0;
   }
 }
 
