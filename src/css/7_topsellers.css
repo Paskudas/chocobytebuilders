@@ -257,6 +257,11 @@
     margin-right: auto;
     margin-right: 0;
     width: 162px;
-    margin-left: 590px;
+  }
+  .topsellers-tumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
