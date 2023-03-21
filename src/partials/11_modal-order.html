@@ -47,25 +47,45 @@
       <label class="modal-order-form-label"><span class="input-text">Personal information</span>
         <div class="input-wrap">
           <div class="input-wrap-name">
+<<<<<<< Updated upstream
             <input type="text" class="modal-order-input" name="name" placeholder="Name">
             <input type="text" class="modal-order-input" name="name" placeholder="Surname">
+=======
+            <input type="text" class="modal-order-input" name="name" pattern="^[a-zA-Z]+$" minlength="2" required
+              placeholder="Name">
+            <input type="text" class="modal-order-input" name="name" pattern="^[a-zA-Z]+$" minlength="2" required
+              placeholder="Surname">
+>>>>>>> Stashed changes
           </div>
         </div>
       </label>
       <label class="modal-order-form-label"><span class="input-text">Email</span>
         <div class="input-wrap">
+<<<<<<< Updated upstream
           <input type="email" class="modal-order-input" name="email" placeholder="Enter your email">
+=======
+          <input type="email" class="modal-order-input" name="email" required placeholder="Enter your email">
+>>>>>>> Stashed changes
         </div>
       </label>
       <label class="modal-order-form-label"><span class="input-text">Phone number</span>
         <div class="input-wrap">
           <div class="input-wrap-tel">
+<<<<<<< Updated upstream
             <input type="tel" class="modal-order-input" name="phone" placeholder="Phone number">
+=======
+            <input type="tel" class="modal-order-input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="XXX-XXX-XX-XX" required placeholder="Phone number">
+>>>>>>> Stashed changes
             <svg class="modal-order-icon" width="32" height="32">
               <use href="/img/svg_sprite.svg#icon-Frame"></use>
             </svg>
             <svg class="modal-order-icon-tel" width="43" height="22">
+<<<<<<< Updated upstream
               <use href="/img/svg_sprite.svg#icon-tel"></use>
+=======
+              <use href="/img/svg_sprite.svg#text-tel"></use>
+>>>>>>> Stashed changes
             </svg>
           </div>
         </div>
@@ -73,7 +93,12 @@
       <label class="modal-order-form-label"><span class="input-text">Card number</span>
         <div class="input-wrap">
           <div class="input-wrap">
+<<<<<<< Updated upstream
             <input type="tel" class="modal-order-input" name="phone" placeholder="Enter card">
+=======
+            <input type="tel" class="modal-order-input" name="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+              title="XXXX-XXXX-XXXX-XXXX" required placeholder="Enter card">
+>>>>>>> Stashed changes
             <svg class="modal-order-icon-card" width="44" height="30">
               <use href="/img/svg_sprite.svg#icon-Mastercard"></use>
             </svg>
@@ -92,5 +117,10 @@
 
 
 
+<<<<<<< Updated upstream
 <!-- <button type="button" class="btn close">close</button>
 <button type="button" class="btn" id="open-modal-thanks">Make Order!</button> -->
+=======
+<button type="button" class="btn close">close</button>
+<button type="button" class="btn" id="open-modal-thanks">Make Order!</button>
+>>>>>>> Stashed changes

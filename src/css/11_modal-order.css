@@ -11,7 +11,11 @@
 }
 
 .modal-order {
+<<<<<<< Updated upstream
   position: absolute;
+=======
+  position: fixed;
+>>>>>>> Stashed changes
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -40,7 +44,12 @@
   transition: all 250ms;
 }
 
+<<<<<<< Updated upstream
 .modal-order-close-icon:is(:hover, :focus) {
+=======
+.modal-order-close-icon:hover,
+.modal-order-close-icon:focus {
+>>>>>>> Stashed changes
   width: 27px;
   height: 27px;
 }
@@ -157,12 +166,21 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
+<<<<<<< Updated upstream
 .modal-order-input:focus,
 .modal-order-input:hover {
   color: #000000;
 }
 
 .input-wrap-tel > .modal-order-input {
+=======
+.modal-order-inputfocus,
+.modal-order-inputhover {
+  color: #000000;
+}
+
+.input-wrap-tel .modal-order-input {
+>>>>>>> Stashed changes
   padding: 10px 29px 11px 106px;
 }
 
@@ -239,8 +257,13 @@
   color: #ffffff;
   border-color: transparent;
 }
+<<<<<<< Updated upstream
 .modal-order-btn:hover,
 .modal-order-btn:focus {
+=======
+.modal-order-btnhover,
+.modal-order-btnfocus {
+>>>>>>> Stashed changes
   background-color: #fcf1e0;
   color: #fd9222;
 }
@@ -251,9 +274,17 @@
 
 @media screen and (min-width: 768px) {
   .modal-order {
+<<<<<<< Updated upstream
     width: 609px;
     height: 1058px;
     padding: 48px;
+=======
+    position: absolute;
+    width: 609px;
+    height: 1058px;
+    padding: 48px;
+    transform: translate(-50%, -30%);
+>>>>>>> Stashed changes
   }
 
   .modal-order-title {
@@ -309,7 +340,11 @@
     padding: 22px 24px;
   }
 
+<<<<<<< Updated upstream
   .input-wrap-tel > .modal-order-input {
+=======
+  .input-wrap-tel .modal-order-input {
+>>>>>>> Stashed changes
     padding: 21px 99px 21px 177px;
   }
 
