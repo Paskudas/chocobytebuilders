@@ -59,12 +59,17 @@
 .top-sellers-subtitle {
   margin-top: 0;
 
-  width: 306px;
+  width: 100%;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--black);
+}
+@media screen and (min-width: 380px){
+  .top-sellers-subtitle {
+    width: 306px;
+  }
 }
 
 .top-sellers-btn {
