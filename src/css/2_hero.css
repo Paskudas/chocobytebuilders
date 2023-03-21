@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   background-color: #fafafa;
   background: linear-gradient(
       180deg,
@@ -11,14 +11,13 @@
   background-size: cover;
   flex-grow: 1;
   max-width: 1440px;
-  /*margin: 20px;*/
   padding-bottom: 28px;
   padding-top: 395px;
   border-radius: 30px;
   margin-bottom: 71px;
-}
+} */
 
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
@@ -29,13 +28,43 @@
       ),
       url(../img/chocolate-cover-cocoa-powder-mob_2x.jpg);
   }
+} */
+.hero {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .hero-container {
-  width: 100%;
-  padding: 0 20px;
+  max-width: 335px;
+  min-height: 620px;
+  padding-top: 395px;
+  padding-left: 20px;
+  padding-right: 11px;
+  padding-bottom: 20px;
   margin: 0 auto;
   justify-content: center;
+  background-color: #fafafa;
+    background: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(../img/chocolate-cover-cocoa-powder-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(../img/chocolate-cover-cocoa-powder-mob_2x.jpg);
+  }
 }
 
 .hero-title {
@@ -176,19 +205,16 @@
     fill: #ffffff;
 }
 
-@media screen and (min-width: 375px) {
-  .hero {
-    max-width: 375px;
-    margin: auto;
-    margin-bottom: 50px;
-  }
-  .main-hero-btn {
-    row-gap: 44px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
+
   .hero {
+    max-width: 768px;
+  }
+
+  .hero-container {
+    max-width: 704px;
     background: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -205,14 +231,13 @@
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 30px;
-    max-width: 768px;
     margin-bottom: 50px;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero-container {
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -220,10 +245,6 @@
         ),
         url(../img/chocolate-cover-cocoa-powder-tablet_2x.jpg);
     }
-  }
-
-  .hero-container {
-    width: 100%;
   }
 
   .hero-title {
@@ -270,6 +291,9 @@
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1200px;
+  }
+  .hero-container {
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -281,7 +305,7 @@
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-    max-width: 1200px;
+    max-width: 1136px;
     margin: auto;
     padding-bottom: 40px;
     border-radius: 30px;
@@ -291,7 +315,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero {
+    .hero-container {
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
