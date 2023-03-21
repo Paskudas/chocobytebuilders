@@ -1,5 +1,6 @@
 .products{
     background-color: #FAFAFA;
+    padding-top: 72px;
 }
 .products-container{
     position: relative;
@@ -7,7 +8,6 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 72px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 72px;
@@ -98,8 +98,10 @@
     width: 100%;
 }
 @media screen and (min-width: 768px) {
-    .products-container{
+    .products{
         padding-top: 100px;
+    }
+    .products-container{
         padding-bottom: 100px;
         width: 100%;
         max-width: 768px;
@@ -107,6 +109,7 @@
     }
     .h2-product{
         margin-bottom: 50px;
+        font-size: 24px;
     }
     .swiper, swiper-container{
         position: initial;
@@ -134,8 +137,10 @@
     }
 }
 @media screen and (min-width: 1200px){
-    .products-container{
+    .products{
         padding-top: 128px;
+    }
+    .products-container{
         padding-bottom: 128px;
         width: 100%;
         max-width: 1200px;
