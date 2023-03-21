@@ -30,11 +30,11 @@
     <title>Choco Byte Builders</title>
     
     <script type="module" crossorigin src="/chocobytebuilders/assets/index-9548ce1f.js"></script>
-    <link rel="stylesheet" href="/chocobytebuilders/assets/index-a584c1f2.css">
+    <link rel="stylesheet" href="/chocobytebuilders/assets/index-77ef391d.css">
   </head>
   <body>
     <header>
-      <header class="header">
+      <section class="header">
   <div class="container">
     <a href="" class="logo"><span>SIMPLY </span> CHOCOLATE</a>
     <svg width="21" height="21" class="logo-icon">
@@ -77,7 +77,7 @@
       </svg>
     </button>
   </div>
-</header>
+</section>
     </header>
     <main>
       <section class="hero" id="home">
@@ -97,11 +97,20 @@
       </div>
       <div class="hero-scroll-down">
         <a class="hero-text" href="#footer" id="scroll">scroll down
-          <button class="hero-btn-scroll" type="button" aria-label="scroll" title="scroll">
-            <svg class="btn-scroll-icon" width="16" height="16">
-              <use href="/chocobytebuilders/assets/svg_sprite-a1aa342d.svg#icon-check"></use>
-            </svg>
-          </button>
+          <span>
+            <button
+              class="hero-btn-scroll"
+              type="button"
+              aria-label="scroll"
+              title="scroll"
+            >
+              <svg class="btn-scroll-icon" width="16" height="16">
+                <use
+                  href="/chocobytebuilders/assets/svg_sprite-a1aa342d.svg#icon-check"
+                  alt="scroll down"
+                ></use>
+              </svg></button
+          ></span>
         </a>
       </div>
     </div>
@@ -780,7 +789,7 @@
   </section> 
     </main>
     <footer>
-      <footer>
+      <section>
   <div class="footer-container" id="footer">
     <div class="footer-extra-wrap">
       <div class="footer-header">
@@ -847,7 +856,7 @@
       </li>
     </ul>
   </div>
-</footer>
+</section>
 
     </footer>
     <!-- modal window -->
@@ -879,7 +888,7 @@
                 required
               />
               <label for="prise-item-100" class="modal-lable checkbox"
-                ><p class="one-part">100 g</p>
+                ><span class="one-part">100 g</span>
               </label>
             </div>
           </li>
@@ -898,7 +907,7 @@
                 required
               />
               <label for="prise-item-200" class="modal-lable checkbox"
-                ><p class="two-parts">200 g</p>
+                ><span class="two-parts">200 g</span>
               </label>
             </div>
           </li>
@@ -917,7 +926,7 @@
                 required
               />
               <label for="prise-item-300" class="modal-lable checkbox"
-                ><p class="three-parts">300 g</p>
+                ><span class="three-parts">300 g</span>
               </label>
             </div>
           </li>
@@ -1006,11 +1015,11 @@
 
     <div class="container-modal-thanks" id="modal-thanks">
   <div class="modal-thanks">
-    <botton class="modal-thanks-btn-close close" type="button">
+    <button class="modal-thanks-btn-close close" type="button">
       <svg class="modal-thanks-icon">
         <use href="/chocobytebuilders/assets/svg_sprite-a1aa342d.svg#icon-x"></use>
       </svg>
-    </botton>
+    </button>
 
     <div class="modal-thanks-content">
       <h3 class="modal-thanks-tittle">THANK YOU!</h3>
@@ -1146,15 +1155,18 @@
       EXPLORE OUR <br />
       <span class="modal-subscribe-tittle-colorize">NEW CHOCOLATE</span> FIRST!
     </h3>
-    <label class="modal-subscribe-input-wrap"
-      ><input
-        type="email"
-        name="user-name"
-        id="user-name"
-        class="modal-subscribe-input"
-      />
+    <div class="subscribe-tumb">
+      <label class="modal-subscribe-input-wrap"
+        ><input
+          type="email"
+          name="user-name"
+          id="user-name"
+          class="modal-subscribe-input"
+          placeholder="Enter your email"
+        />
+      </label>
       <button type="submit" class="modal-subscribe-btn-submit">Submit</button>
-    </label>
+    </div>
   </div>
 </div>
 
