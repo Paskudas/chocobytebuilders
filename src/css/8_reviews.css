@@ -207,13 +207,13 @@
 	height: 13px;
 	background-color: rgba(17, 17, 17, 0.1);
   border: 1px solid transparent;
-	border-radius: 50%;
+	border-radius: 15px;
 }
 
 .slider .slick-dots li.slick-active button{
 	background-color: #FD9222;
 	border: 1px solid transparent;
-  border-radius: 40%;
+  border-radius: 15px;
   width: 28px;
 }
 
