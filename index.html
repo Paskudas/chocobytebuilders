@@ -1029,11 +1029,14 @@
               <label class="data-item"
                 >Card number<input
                   type="text"
-                  placeholder="Enter  card"
+                  placeholder="Enter card"
                   name="card_number"
                   class="order-point"
                   pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                  minlength="12"
+                  maxlength="12"
                   title="XXXX-XXXX-XXXX-XXXX"
+                  value=""
                   required
               /></label>
             </li>
